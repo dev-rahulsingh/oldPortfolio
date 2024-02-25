@@ -180,7 +180,7 @@ header {
   padding: 7rem 12rem;
 }
 .section-1 .cover-box {
-  padding: 5rem;
+  padding: 5rem 3rem;
   background-color: #fff;
 }
 .section-1 .myself {
@@ -239,8 +239,7 @@ header {
 }
 
 /* skill details css code */
-.section {
-}
+
 .section-2 h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -329,6 +328,19 @@ header {
   margin-bottom: 0.5rem;
   display: block;
   font-weight: 100;
+}
+.section-3 .certificate {
+  padding: 0 3rem;
+}
+.section-3 .certificate > li {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0;
+}
+
+.certificate > li img {
+  margin-right: 2rem;
 }
 /* experience section css code end */
 
