@@ -66,16 +66,16 @@ ScrollReveal().reveal(".section-4", {
   distance: "400px",
   reset: true,
 });
-ScrollReveal().reveal(".myself-data", {
+ScrollReveal().reveal(".myself-dat", {
   delay: 1000,
   duration: 1500,
   origin: "right",
-  distance: "400px",
+  // distance: "400px",
   reset: true,
 });
 ScrollReveal().reveal(".action-btn", {
   delay: 500,
-  duration: 1500,
+  duration: 1000,
   opacity: 0,
   distance: "50%",
   origin: "bottom",
@@ -95,21 +95,21 @@ ScrollReveal().reveal(".list-1", {
   delay: 500,
   duration: 1500,
   origin: "right",
-  distance: "400px",
+  // distance: "400px",
   reset: true,
 });
 ScrollReveal().reveal(".list-2", {
   delay: 500,
   duration: 1500,
   origin: "left",
-  distance: "400px",
+  // distance: "400px",
   reset: true,
 });
 ScrollReveal().reveal(".list-3", {
   delay: 500,
   duration: 1500,
   origin: "right",
-  distance: "400px",
+  // distance: "400px",
   reset: true,
 });
 // contact us page
