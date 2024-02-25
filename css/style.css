@@ -301,7 +301,8 @@ header {
   padding: 3rem 7rem;
 }
 .section-3 h2,
-.section-5 h2 {
+.section-5 h2,
+.section-3-1 h2 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
 }
@@ -343,6 +344,29 @@ header {
   margin-right: 2rem;
 }
 /* experience section css code end */
+
+/* project section css start */
+.section-3-1 {
+  padding: 2rem 7rem;
+}
+.section-3-1 ul li {
+  padding: 1rem 0;
+  list-style: none;
+  font-family: "Chivo", sans-serif;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.section-3-1 .pro-data {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-3-1 .pro-data p {
+  margin: 0;
+}
+/* project section css end */
 
 /* about myself css code start */
 .myself-details {
@@ -449,6 +473,10 @@ textarea:focus {
   color: #fff;
   font-weight: 100;
   border: none;
+}
+.final-btn a:hover {
+  color: #000;
+  z-index: 3;
 }
 .left-ct .final-btn a::before {
   background-color: #fff;
