@@ -220,12 +220,12 @@ header {
 }
 .section-1 .achive {
   margin-top: 3rem;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
   column-gap: 5rem;
-  padding: 0 1rem;
+  padding: 0 1rem; */
 }
 .section-1 .range-scale {
   text-transform: uppercase;
