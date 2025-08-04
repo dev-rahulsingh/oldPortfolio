@@ -13,6 +13,11 @@ font-family: "Shippori Mincho", serif; */
   --primary: #f5f82c;
   --secondprimary: #f1f51c;
   --secondary: #f1f504;
+  --gradient-primary: linear-gradient(
+    344deg,
+    rgba(214, 214, 4, 1) 50%,
+    rgba(255, 229, 0, 1) 100%
+  );
 }
 ul {
   padding: 0;
@@ -36,6 +41,24 @@ h6 {
 }
 .section {
   padding: 7rem;
+  .ita_back {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+}
+.ita_back::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  transform: scale(1.07, 1.05) skewX(-15deg);
+  background-image: var(--gradient-primary);
 }
 
 /* reboot css ends */
@@ -220,12 +243,18 @@ header {
 }
 .section-1 .achive {
   margin-top: 3rem;
+
   /* display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
   column-gap: 5rem;
   padding: 0 1rem; */
+}
+
+.section-1 .achive .matters {
+  margin-left: 2rem;
+  padding: 0.5rem 0;
 }
 .section-1 .range-scale {
   text-transform: uppercase;
@@ -310,13 +339,17 @@ header {
 .section-5 .exp-detail {
   padding-left: 8rem;
 }
-.section-3 .exp-detail ul li,
+.section-3 .exp-detail .main-list > li,
 .section-5 .exp-detail ul li {
   list-style: none;
   padding: 2rem 0;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
 }
+.exp-detail .reseting_UL li {
+  list-style: disc;
+}
+
 .exp-detail .exp-data {
   display: flex;
   justify-content: space-between;
@@ -374,6 +407,17 @@ header {
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
   position: relative;
+}
+.my_image {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.my_image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .myself-data {
   overflow: hidden;
