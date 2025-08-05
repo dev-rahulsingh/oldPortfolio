@@ -75,11 +75,12 @@ header {
 /* <------ navigation css ---> */
 
 .nav {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-  height: 4.5rem;
-  padding: 0 95px;
+  display: flex;
+
+  padding: 0px 6rem;
   z-index: 100;
+  justify-content: space-between;
+  position: relative;
 }
 .sticky {
   position: fixed;
@@ -92,18 +93,67 @@ header {
 .logo-img {
   position: relative;
   width: 100%;
-  line-height: 4.5rem;
+  /* line-height: 4.5rem; */
+  max-width: 10rem;
+  margin: auto 0;
 }
 .logo-img img {
-  width: 10rem;
+  width: 100%;
+  display: block;
   padding: 30px;
 }
+/* small navigation */
+.small_nav {
+  display: none;
+}
+#nav-icon4 {
+  width: 40px;
+  height: 45px;
+  position: relative;
+  border: none;
+  margin: 25px auto;
+  background-color: transparent;
+}
 
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+
+  height: 4px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+}
+#nav-icon4 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 10px;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 20px;
+}
+
+.offcanvas-body ul li {
+  list-style: none;
+  padding: 5px 0;
+  margin: 10px 0;
+}
+/* main navigation */
+.nav .nav-title {
+  display: flex;
+  align-items: center; /* vertically centers children */
+  height: 5rem;
+}
 .nav .nav-title ul {
   display: flex;
   position: relative;
   width: 100%;
   justify-content: end;
+  align-items: center;
 }
 .nav-title ul li {
   list-style: none;
@@ -174,7 +224,7 @@ header {
 }
 .hero-area p {
   font-size: 3rem;
-  width: 35rem;
+  /* width: 35rem; */
 }
 .hero-area .hero-btn a,
 .final-btn a {
